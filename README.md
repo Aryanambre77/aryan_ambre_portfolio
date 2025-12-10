@@ -153,7 +153,7 @@ Steps:
 
 6) Click Deploy 🎉
 
-Get your link → https://aryanambre.vercel.app
+Get your link → https://abc.vercel.app
 
 ---
 
