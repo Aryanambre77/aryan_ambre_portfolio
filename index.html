@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aryan Ambre | Aspiring Data Analyst</title>
+  <meta name="description" content="Aryan Ambre is an aspiring data analyst who builds dashboards, automates workflows, and turns data into visual stories. Explore projects, experience, and contact details.">
+  <link rel="canonical" href="https://aryanambre.dev/">
+  <meta property="og:title" content="Aryan Ambre | Aspiring Data Analyst">
+  <meta property="og:description" content="Premium, futuristic portfolio for Aryan Ambre — data analysis, dashboards, automation, and immersive experiences.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://aryanambre.dev/">
+  <meta property="og:image" content="https://og-playground.vercel.app/api/og?title=Aryan%20Ambre%20Portfolio">
+  <meta name="theme-color" content="#070c1a">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.4/dist/locomotive-scroll.min.css">
+  <link rel="stylesheet" href="styles.css">
+  <script defer src="https://unpkg.com/@phosphor-icons/web@2.0.3"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.4/dist/locomotive-scroll.min.js"></script>
+  <!-- EmailJS SDK (used to send contact form messages from client) -->
+  <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <div class="preloader" aria-label="Loading">
+    <div class="logo">Aryan Ambre</div>
+    <!-- AA avatar displayed between name and progress bar -->
+    <div class="preloader-avatar">
+      <div class="avatar-initials">AA</div>
+    </div>
+    <div class="progress-wrap" aria-hidden="true">
+      <div class="progress-bar"></div>
+    </div>
+  </div>
+
+  <header class="nav reveal-on-load" aria-label="Primary">
+    <div class="nav-brand" aria-label="Aryan Ambre logo">AA</div>
+    <nav class="nav-links" aria-label="Main navigation">
+      <a href="#home" data-scroll-to>Home</a>
+      <a href="#about" data-scroll-to>About</a>
+      <a href="#experience" data-scroll-to>Experience</a>
+      <a href="#education" data-scroll-to>Education</a>
+      <a href="#projects" data-scroll-to>Projects</a>
+      <a href="#certifications" data-scroll-to>Certifications</a>
+      <a href="#contact" data-scroll-to>Contact</a>
+    </nav>
+    <button class="nav-toggle" aria-label="Open menu">
+      <i class="ph-light ph-list"></i>
+    </button>
+  </header>
+
+  <div id="scroll-container" data-scroll-container>
+    <div class="background-grid"></div>
+    <div class="glow-orb orb-1"></div>
+    <div class="glow-orb orb-2"></div>
+    <div class="glow-orb orb-3"></div>
+
+    <main>
+      <section class="profile" id="home" data-scroll-section>
+        <div class="profile-card">
+          <div class="profile-photo">
+            <!-- Loads profile.png from the root portfolio folder -->
+            <img src="profile.png" alt="Portrait of Aryan Ambre">
+          </div>
+          <div class="profile-info">
+            <p class="eyebrow">Data · Insights · Dashboards</p>
+            <h2 class="profile-title">Hi, I’m Aryan Ambre — Aspiring Data Analyst</h2>
+            <p class="profile-text">
+              I analyze data and build dashboards that turn raw numbers into clear, decision-ready stories.
+            </p>
+            <div class="profile-actions">
+              <a class="btn btn-primary" href="#contact" data-scroll-to>Hire Me</a>
+              <a class="btn btn-ghost" href="#projects" data-scroll-to>View Projects</a>
+              <a class="btn btn-ghost" href="Aryan Ambre - Resume.pdf" target="_blank" rel="noreferrer">View Resume</a>
+            </div>
+            <div class="profile-meta">
+              <div class="meta-card">
+                <i class="ph-light ph-chart-bar"></i>
+                <span>Dashboards & storytelling</span>
+              </div>
+              <div class="meta-card">
+                <i class="ph-light ph-rocket-launch"></i>
+                <span>Curious about better decisions</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="about" id="about" data-scroll-section>
+        <div class="section-head">
+          <p class="eyebrow">About</p>
+          <h2>Data-driven, solution-focused</h2>
+        </div>
+        <div class="about-wrap">
+          <div class="about-visual">
+            <div class="avatar-frame">
+              <div class="avatar-initials">AA</div>
+            </div>
+            <p class="about-note">Always exploring data, visuals, and insights.</p>
+          </div>
+          <div class="about-copy">
+            <p class="lead">Detail-oriented technology professional with a focus on data analysis and AI-driven automation. Skilled in Python, SQL, and dashboarding. I like turning messy data into clean, visual stories and scalable solutions.</p>
+            <div class="skills">
+              <span class="skill-chip skill-icon"><i class="ph-light ph-code"></i>HTML</span>
+              <span class="skill-chip skill-icon"><i class="ph-light ph-code"></i>CSS</span>
+              <span class="skill-chip skill-icon"><i class="ph-light ph-code"></i>JavaScript</span>
+              <span class="skill-chip skill-icon"><i class="ph-light ph-code"></i>Python</span>
+              <span class="skill-chip skill-icon"><i class="ph-light ph-code"></i>Java</span>
+              <span class="skill-chip skill-icon"><i class="ph-light ph-database"></i>SQL</span>
+              <span class="skill-chip skill-icon"><i class="ph-light ph-microsoft-excel-logo"></i>Excel</span>
+              <span class="skill-chip skill-icon"><i class="ph-light ph-chart-pie"></i>Power BI</span>
+              <span class="skill-chip skill-icon"><i class="ph-light ph-chart-pie"></i>Tableau</span>
+              <span class="skill-chip skill-icon"><i class="ph-light ph-git-commit"></i>Git</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="experience" id="experience" data-scroll-section>
+        <div class="section-head">
+          <p class="eyebrow">Experience</p>
+          <h2>Hands-on impact.</h2>
+        </div>
+        <div class="exp-list">
+          <article class="exp-item">
+            <div class="exp-meta">
+              <p class="exp-role">AI Video Automation Intern</p>
+              <p class="exp-org">Videoverse · May 2024 – Aug 2024</p>
+            </div>
+            <ul class="exp-points">
+              <li>Used Magnifi AI to automate video clipping and tagging tools for live sports events.</li>
+              <li>Built automation workflows for highlights extraction, metadata tagging, and optimized content generation for web and social platforms.</li>
+              <li>Gained hands-on experience with video automation, sports analytics, and digital media publishing workflows.</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <section class="education" id="education" data-scroll-section>
+        <div class="section-head">
+          <p class="eyebrow">Education</p>
+          <h2>Learning with intent</h2>
+        </div>
+        <div class="edu-timeline">
+          <article class="edu-item">
+            <div class="edu-node"></div>
+            <div class="edu-card">
+              <p class="edu-degree">MCA</p>
+              <p class="edu-inst">Thakur Institute of Management Studies, Career, Development & Research</p>
+              <p class="edu-year">2024–2026 · CGPA 9.04/10</p>
+            </div>
+          </article>
+          <article class="edu-item">
+            <div class="edu-node"></div>
+            <div class="edu-card">
+              <p class="edu-degree">B.Sc. IT</p>
+              <p class="edu-inst">Narsee Monjee College of Commerce and Economics</p>
+              <p class="edu-year">2021–2024 · CGPA 7.99/10</p>
+            </div>
+          </article>
+          <article class="edu-item">
+            <div class="edu-node"></div>
+            <div class="edu-card">
+              <p class="edu-degree">HSC</p>
+              <p class="edu-inst">SVKM’s Mithibai College</p>
+              <p class="edu-year">2021 · 88.83%</p>
+            </div>
+          </article>
+          <article class="edu-item">
+            <div class="edu-node"></div>
+            <div class="edu-card">
+              <p class="edu-degree">SSC</p>
+              <p class="edu-inst">St. Anne’s High School</p>
+              <p class="edu-year">2019 · 84.80%</p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="projects" id="projects" data-scroll-section>
+        <div class="section-head">
+          <p class="eyebrow">Projects</p>
+          <h2>Shipped, shipped, shipping.</h2>
+        </div>
+        <div class="project-strip">
+          <article class="project-card" data-link="https://github.com/Aryanambre77/Vidyarthi-Saathi">
+            <div class="project-img">
+              <!-- Inline image for better accessibility and responsive control -->
+              <img src="v4.png" alt="Vidyarthi Saathi app screenshot" style="width: 100%; height: 100%;">
+            </div>
+            <div class="project-body">
+              <p class="project-title">Vidyarthi Saathi</p>
+              <p class="project-desc">Student helper app with utilities to keep learners on track.</p>
+              <p class="project-tech">Flutter · Firebase · REST</p>
+              <button class="project-cta">Open GitHub <i class="ph-light ph-arrow-up-right"></i></button>
+              <br>
+            </div>
+          </article>
+          <article class="project-card" data-link="https://github.com/Aryanambre77/Mobile-Operator">
+            <div class="project-img">
+              <img src="Mobile.jpg" alt="Mobile Operator app screenshot" style="width: 100%; height: 100%;">
+            </div>
+            <div class="project-body">
+              <p class="project-title">Mobile Operator</p>
+              <p class="project-desc">Telecom UI + logic demo for modern carrier experiences.</p>
+              <p class="project-tech">Java · SQL · Android</p>
+              <button class="project-cta">Open GitHub <i class="ph-light ph-arrow-up-right"></i></button>
+              <br>
+            </div>
+          </article>
+          <article class="project-card" data-link="https://github.com/Aryanambre77/Employee-Management-System">
+            <div class="project-img">
+              <div class="project-img">
+              <img src="e1.jpg" alt="Employee-Management-System app screenshot" style="width: 100%; height: 100%;">
+            </div>
+            </div>
+            <div class="project-body">
+              <p class="project-title">Employee Management System</p>
+              <p class="project-desc">CRUD application with streamlined employee operations.</p>
+              <p class="project-tech">Java · SQL · Swing</p>
+              <button class="project-cta">Open GitHub <i class="ph-light ph-arrow-up-right"></i></button>
+              <br><br>
+            </div>
+            
+          </article>
+          <article class="project-card" data-link="https://github.com/Aryanambre77/Electricity-Consumption">
+            <div class="project-img">
+              <div class="project-img">
+              <img src="e2.jpg" alt="Electricity Consumption app screenshot" style="width: 100%; height: 100%;">
+            </div>
+            </div>
+            <div class="project-body">
+              <p class="project-title">Electricity Consumption</p>
+              <p class="project-desc">Analytics mini-project exploring usage and optimization.</p>
+              <p class="project-tech">Python · Pandas · Visualization</p>
+              <button class="project-cta">Open GitHub <i class="ph-light ph-arrow-up-right"></i></button>
+              <br>
+            </div>
+          </article>
+          <article class="project-card" data-link="https://github.com/Aryanambre77/Distance-Calculator">
+            <div class="project-img">
+              <div class="project-img">
+              <img src="d1.jpg" alt="Distance Calculator app screenshot" style="width: 100%; height: 100%;">
+            </div>
+            </div>
+            <div class="project-body">
+              <p class="project-title">Distance Calculator</p>
+              <p class="project-desc">Distance and ETA calculator.</p>
+              <p class="project-tech">Python · Haversine Formula · MapQuest Geocoding API</p>
+              <button class="project-cta">Open GitHub <i class="ph-light ph-arrow-right"></i></button>
+              <br>
+            </div>
+          </article>
+          <article class="project-card" data-link="https://github.com/Aryanambre77/House-Price-Prediction-System-Using-EDA">
+            <div class="project-img">
+              <img src="h3.png" alt="House Price Prediction System Using AI app screenshot" style="width: 100%; height: 100%;">
+            </div>
+            <div class="project-body">
+              <p class="project-title">House Price Prediction System Using AI</p>
+              <p class="project-desc">A Streamlit web app that predicts Ames housing prices using Linear Regression.</p>
+              <p class="project-tech">Python · Pandas · NumPy · Seaborn · Visualization</p>
+              <button class="project-cta">Open GitHub <i class="ph-light ph-arrow-right"></i></button>
+              <br><br><br>
+            </div>
+          </article>
+          <article class="project-card" data-link="https://github.com/Aryanambre77/Task-Management-System">
+            <div class="project-img">
+              <img src="t1.jpg" alt="Task Management System Using AI app screenshot" style="width: 100%; height: 100%;">
+            </div>
+            <div class="project-body">
+              <p class="project-title">Task Management System</p>
+              <p class="project-desc">Web-based application built using ASP.NET for managing workloads.</p>
+              <p class="project-tech">C# · SQL · Visual Studio</p>
+              <button class="project-cta">Open GitHub <i class="ph-light ph-arrow-right"></i></button>
+              <br>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="certifications" id="certifications" data-scroll-section>
+        <div class="section-head">
+          <p class="eyebrow">Certifications</p>
+          <h2>Signals of skill</h2>
+        </div>
+        <div class="cert-list">
+          <article class="cert-item">
+            <div class="cert-icon"><i class="ph-light ph-seal-check"></i></div>
+            <div>
+              <p class="cert-title">Deloitte Data Analytics</p>
+              <p class="cert-meta">Forage · 2025</p>
+            </div>
+          </article>
+          <article class="cert-item">
+            <div class="cert-icon"><i class="ph-light ph-seal-check"></i></div>
+            <div>
+              <p class="cert-title">AI for Future Workforce Program</p>
+              <p class="cert-meta">Intel & Dell · 2025</p>
+            </div>
+          </article>
+          <article class="cert-item">
+            <div class="cert-icon"><i class="ph-light ph-seal-check"></i></div>
+            <div>
+              <p class="cert-title">Data Analytics with Python</p>
+              <p class="cert-meta">NPTEL · 2025</p>
+            </div>
+          </article>
+          <article class="cert-item">
+            <div class="cert-icon"><i class="ph-light ph-seal-check"></i></div>
+            <div>
+              <p class="cert-title">Foundational C# with Microsoft</p>
+              <p class="cert-meta">freeCodeCamp · 2025</p>
+            </div>
+          </article>
+          <article class="cert-item">
+            <div class="cert-icon"><i class="ph-light ph-seal-check"></i></div>
+            <div>
+              <p class="cert-title">Accenture Data Analytics and Visualization</p>
+              <p class="cert-meta">Forage · 2024</p>
+            </div>
+          </article>
+          <article class="cert-item">
+            <div class="cert-icon"><i class="ph-light ph-seal-check"></i></div>
+            <div>
+              <p class="cert-title">Tata Group - Data Visualisation: Empowering Business with Effective Insights</p>
+              <p class="cert-meta">Forage · 2024</p>
+            </div>
+          </article>
+          <article class="cert-item">
+            <div class="cert-icon"><i class="ph-light ph-seal-check"></i></div>
+            <div>
+              <p class="cert-title">Google Analytics (Beginner & Advanced)</p>
+              <p class="cert-meta">Google · 2023</p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="contact" id="contact" data-scroll-section>
+  <div class="section-head">
+    <p class="eyebrow">Contact</p>
+    <h2>Let’s build together.</h2>
+  </div>
+
+  <div class="contact-grid">
+    <!-- FORM -->
+    <form id="contact-form" class="contact-form" aria-label="Contact form"
+          action="https://formspree.io/f/xjknarrk" method="POST">
+      <label class="input">
+        <span>Name</span>
+        <input type="text" name="name" placeholder="Your name" required>
+      </label>
+
+      <label class="input">
+        <span>Email</span>
+        <input type="email" name="email" placeholder="you@example.com" required>
+      </label>
+
+      <label class="textarea">
+        <span>Message</span>
+        <textarea name="message" rows="4" placeholder="Tell me about the project" required></textarea>
+      </label>
+
+      <!-- mailto removed; Formspree handles the send -->
+      <button type="submit" class="btn btn-primary">Send Message</button>
+      <p class="form-feedback" role="status" aria-live="polite"></p>
+    </form>
+
+    <!-- META PANEL (interactive) -->
+    <div class="contact-meta" id="contactMeta" aria-label="Other ways to reach me">
+      <p class="lead">Reach out for collaborations, dashboards, and data-driven products.</p>
+
+      <!-- micro tagline that rotates -->
+      <p class="micro-tagline" id="microTagline">
+        Let’s make numbers tell stories.
+      </p>
+      <h3 class="signature" id="signatureName">Aryan Ambre</h3>
+      <div class="socials">
+        <a href="https://github.com/Aryanambre77" target="_blank" rel="noreferrer" aria-label="GitHub">
+          <i class="ph-light ph-github-logo"></i>
+        </a>
+        <a href="https://linkedin.com/in/aryan-ambre" target="_blank" rel="noreferrer" aria-label="LinkedIn">
+          <i class="ph-light ph-linkedin-logo"></i>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+    </main>
+
+    <footer class="footer" data-scroll-section>
+      <div class="footer-links">
+        <a href="#home" data-scroll-to>Home</a>
+        <a href="#about" data-scroll-to>About</a>
+        <a href="#experience" data-scroll-to>Experience</a>
+        <a href="#education" data-scroll-to>Education</a>
+        <a href="#projects" data-scroll-to>Projects</a>
+        <a href="#certifications" data-scroll-to>Certifications</a>
+        <a href="#contact" data-scroll-to>Contact</a>
+      </div>
+      <p class="footer-note">© 2025 Aryan Ambre. Designed and developed by Aryan Ambre.</p>
+      <br>
+      <br>
+      <!-- <div class="footer-socials">
+        <a href="https://github.com/Aryanambre77" target="_blank" rel="noreferrer" aria-label="GitHub"><i class="ph-light ph-github-logo"></i></a>
+        <a href="https://linkedin.com/in/aryan-ambre" target="_blank" rel="noreferrer" aria-label="LinkedIn"><i class="ph-light ph-linkedin-logo"></i></a>
+      </div> -->
+    </footer>
+  </div>
+</body>
+</html>
+
