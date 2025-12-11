@@ -172,6 +172,30 @@ document.addEventListener("DOMContentLoaded", () => {
     duration: prefersReduced ? 0.2 : 0.7
   });
 
+  const projectStrip = document.querySelector(".project-strip");
+const leftBtn = document.querySelector(".left-btn");
+const rightBtn = document.querySelector(".right-btn");
+
+const scrollAmount = 400; 
+
+rightBtn.addEventListener("click", () => {
+  projectStrip.scrollBy({ left: scrollAmount, behavior: "smooth" });
+});
+
+leftBtn.addEventListener("click", () => {
+  projectStrip.scrollBy({ left: -scrollAmount, behavior: "smooth" });
+});
+
+function updateArrowVisibility() {
+  const maxScroll = projectStrip.scrollWidth - projectStrip.clientWidth;
+  leftBtn.style.opacity = projectStrip.scrollLeft <= 0 ? "0.3" : "1";
+  rightBtn.style.opacity = projectStrip.scrollLeft >= maxScroll - 1 ? "0.3" : "1";
+}
+
+projectStrip.addEventListener("scroll", updateArrowVisibility);
+window.addEventListener("resize", updateArrowVisibility);
+updateArrowVisibility();
+  
   // Certifications
   gsap.from(".cert-item", {
     scrollTrigger: { trigger: ".certifications", scroller: scrollContainer, start: "top 80%" },
