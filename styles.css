@@ -624,7 +624,7 @@ section {
   grid-auto-flow: column;
   grid-auto-columns: minmax(260px, 340px);
   gap: 1rem;
-  overflow-x: auto;
+  overflow-x: hidden;
   overflow-y: hidden; /* prevent vertical scroll */
   padding-bottom: 0.5rem; /* space for scrollbar */
   scrollbar-width: thin;
@@ -632,8 +632,55 @@ section {
 }
 
 .projects .project-strip::-webkit-scrollbar {
-  height: 10px;
+  display: none;
 }
+
+.projects-carousel {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+}
+
+.carousel-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(12, 18, 32, 0.75);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  color: #fff;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  cursor: pointer;
+  z-index: 5;
+  backdrop-filter: blur(8px);
+  transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.carousel-btn:hover {
+  background: linear-gradient(135deg, var(--accent), var(--accent-2));
+  transform: translateY(-50%) scale(1.05);
+}
+
+.left-btn {
+  left: 0.8rem;
+}
+
+.right-btn {
+  right: 0.8rem;
+}
+
+/* Hide arrows on small screens (touch-based swipe works fine) */
+@media (max-width: 768px) {
+  .carousel-btn {
+    display: none;
+  }
+}
+
 
 .projects .project-strip::-webkit-scrollbar-thumb {
   background: rgba(255, 255, 255, 0.15);
